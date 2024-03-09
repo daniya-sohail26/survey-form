@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+ }
+ 
+ body{
+   font-family:Poppins;
+   font-size:14px;
+   background-image:url(https://images.pexels.com/photos/1300975/pexels-photo-1300975.jpeg?cs=srgb&dl=pexels-magda-ehlers-1300975.jpg&fm=jpg);
+ }
+ 
+ input,label{
+   display:block;
+   margin:0.4rem 0;
+   
+ }
+ 
+ input[name="duration"],input[name="quality"],#currently-used,
+ input[name="reason"]{
+   display:inline;
+ }
+ 
+ #title{
+   text-align:center;
+   margin:0.5em auto;
+ }
+ 
+ p{
+   text-align:justify;
+   margin:0.5em auto;
+   width:80%;
+ }
+ 
+ .container{
+   background-color:#FFC067;
+   border:4px solid #FF7336;
+   border-radius:1em;
+   width:80%;
+   margin:3rem auto;
+   max-width:700px;
+ }
+ 
+ fieldset,select,#rating,input[type="submit"]{
+   margin:2em auto;
+   width:80%;
+   border:none;
+ }
+ 
+ input[type="submit"]{
+   background-color:#ff7336;
+   height:2em;
+   color:white;
+   font-family:Poppins;
+ }
+ 
+ input[type="submit"]:hover{
+   background-color:#dc5e29;
+ }
+ 
+ input[type="text"],input[type="email"],
+ input[type="number"]{
+   width:100%;
+ }
+ 
+ select{
+   width:100%;
+ }
+ 
+ input{
+   background-color:#ecd6b8;
+   border:2px solid #dc5e29;
+ }
+ 
+ textarea{
+   display:block;
+   width:80%;
+   margin:0.4rem auto;
+   background-color:#ecd6b8;
+   border:2px solid #dc5e29;
+ }
+ 
+ label[for="feedback"]{
+   text-align:center;
+ }
+ 
+ input::placeholder{
+   font-family:Poppins;
+ }
+ 
+ select{
+   font-family:Poppins;
+   background-color:#ecd6b8;
+   border:2px solid #dc5e29;
+ }
+ 
+ input[type="text"],input[type="email"],input[type="number"]{
+   height:2em;
+ }

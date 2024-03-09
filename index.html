@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+
+<body>
+<div class="container">
+   <h1 id="title">FruitSense Survey Form</h1>
+   <p id="description">
+The survey is brief and will take just a few minutes to complete. Your responses will remain confidential and be used solely for research and product development purposes.
+   </p>
+
+   <form id="survey-form">
+     <fieldset>
+     <label for="name" id="name-label" >Name:
+       <input type="text" id="name" placeholder="Enter your name" required> 
+     </label>
+     <label for="email" id="email-label" >Email:
+       <input type="email" id="email"  placeholder="Enter your email" required> 
+     </label>
+     <label for="number" id="number-label" required>Age:
+       <input type="number" id="number"placeholder="Enter your age"  min="13" max="120">  
+     </label>
+     </fieldset>
+     <fieldset>
+       <legend>How often have you purchased fruits that turned out to be rotten or of poor quality in the past year?</legend>
+       <label for="duration">
+         <input type="radio" id="duration" name="duration" value="duration" checked> Very frequently
+       </label>
+       <label for="duration">
+         <input type="radio" id="duration" name="duration" value="duration"> Occasionally
+       </label>
+       <label for="duration">
+         <input type="radio" id="duration" name="duration" value="duration"> Rarely
+       </label>
+       <label for="duration">
+         <input type="radio" id="duration" name="duration" value="duration"> Almost Never
+       </label>
+
+      </fieldset>
+      <fieldset>
+       <legend>What factors are most important to you when selecting fruits to purchase? (Select all that apply)</legend>
+       <label for="quality">
+         <input type="checkbox" id="quality" name="quality" value="quality" checked> Visual Appearance
+       </label>
+       <label for="quality">
+         <input type="checkbox" id="quality" name="quality" value="quality"> Price
+       </label>
+       <label for="quality">
+         <input type="checkbox" id="quality" name="quality" value="quality"> Smell
+       </label>
+      </fieldset>
+
+      <fieldset>
+       <legend>What is your primary reason for considering the use of an IoT fruit scanner?</legend>
+       <label for="reason">
+         <input type="checkbox" id="reason" name="reason" value="reason" checked> Monitoring sugar intake</label>
+         <label for="reason">
+         <input type="checkbox" id="reason" name="reason" value="reason"> Maintaining a healthy diet</label>
+         <label for="reason">
+         <input type="checkbox" id="reason" name="reason" value="reason"> Reducing food waste</label>
+         <label for="reason">
+         <input type="checkbox" id="reason" name="reason" value="reason"> Making informed decisions when buying fruits</label>
+       
+      </fieldset>
+    
+    <fieldset>
+       <legend>Are you currently using any tools or methods to assess the quality and sweetness of fruits?
+</legend>
+       <label for="currently-used">
+         <input type="radio" id="currently-used" name="currently-used" value="currently-used" checked> Yes
+       </label>
+       <label for="currently-used">
+         <input type="radio" id="currently-used" name="currently-used" value="currently-used"> No
+       </label>
+      </fieldset>
+
+    <label for="rating" id="rating"> How likely are you to use an IoT-based fruit scanner to assess fruit quality and sweetness?
+      <select name="rating" id="dropdown">
+ <option value="" selected>Select a rating</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+    </label>
+
+    <label for="feedback">Feedback:
+      <textarea name="feedback" rows="7" cols="60">
+      </textarea>
+    </label>
+    <input type="submit" value="Submit" id="submit" /></div>
+  </body>
+</html>
